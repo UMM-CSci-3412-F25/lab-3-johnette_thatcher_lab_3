@@ -1,11 +1,4 @@
 #include "mergesort.h"
-#include <stdio.h>
-#include <stdlib.h>
-#include <stdbool.h>
-
-void mergesortRange(int* values, int startIndex, int endIndex);
-void mergeRanges(int* values, int startIndex, int midPoint, int endIndex);
-bool needsSorting(int rangeSize);
 
 void mergesort(int size, int* values) {
     mergesortRange(values, 0, size);
